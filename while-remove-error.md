@@ -30,4 +30,4 @@ while(iter.hasNext()) {
 - 근데 이렇게 하면 List의 개별 요소에 접근할 수 없게 된다.
 
 - 다시 for문으로 돌아와서 오류가 난 이유를 생각해보니, `for(ReservationVO vo : reserveList) {}` 안에서 `reserveList.remove(vo)`를 수행하기 때문이다. 
-따라서 새로운 임시 List에 값을 담아두고 그 리스트의 값을 remove해주면 된다.
+- 따라서 새로운 임시 List에 값을 담아두고 그 리스트의 값을 remove해주면 오류를 해결할 수 있다.
